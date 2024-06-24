@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <main class="main">
+    <section class="content">
+    </section>
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-nav-ul">
+          <li class="footer-nav-ul-li">
+            <a href="#/" class="menu-link" data-href="#/" onclick="locationResolver(this.dataset.href, this)">
+              <img class="menu-icon" src="./img/majesticons_home-line-gray.png" alt="">
+              <span class="menu-icon-name">Реферальная программа</span>
+              <!-- <svg class="menu-icon" fill="none" stroke="black" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.5">
+              <path d="M26 24.4762V11.5238C26 11.2872 25.9458 11.0539 25.8416 10.8423C25.7375 10.6308 25.5863 10.4467 25.4 10.3048L14.9 2.30476C14.6404 2.10694 14.3246 2 14 2C13.6754 2 13.3596 2.10694 13.1 2.30476L2.6 10.3048C2.41371 10.4467 2.2625 10.6308 2.15836 10.8423C2.05422 11.0539 2 11.2872 2 11.5238V24.4762C2 24.8803 2.15804 25.2679 2.43934 25.5537C2.72064 25.8395 3.10218 26 3.5 26H9.5C9.89782 26 10.2794 25.8395 10.5607 25.5537C10.842 25.2679 11 24.8803 11 24.4762V19.9048C11 19.5006 11.158 19.113 11.4393 18.8273C11.7206 18.5415 12.1022 18.381 12.5 18.381H15.5C15.8978 18.381 16.2794 18.5415 16.5607 18.8273C16.842 19.113 17 19.5006 17 19.9048V24.4762C17 24.8803 17.158 25.2679 17.4393 25.5537C17.7206 25.8395 18.1022 26 18.5 26H24.5C24.8978 26 25.2794 25.8395 25.5607 25.5537C25.842 25.2679 26 24.8803 26 24.4762Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              </svg> -->
+            </a>
+          </li>
+          <li class="footer-nav-ul-li chat">
+            <a href="#/feedbacks/" class="menu-link" data-href="#/feedbacks/" onclick="locationResolver(this.dataset.href, this)">
+              <img class="menu-icon" src="./img/user_rounded_gray.png" alt="">
+              <span class="menu-icon-name">Отзывы</span>
+              <!-- <svg class="menu-icon" stroke="black" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.5">
+              <path d="M9.33333 14H9.34383M13.9895 14H14M18.6562 14H18.6667" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 25.6667C20.4433 25.6667 25.6667 20.4433 25.6667 14C25.6667 7.55669 20.4433 2.33334 14 2.33334C7.55668 2.33334 2.33333 7.55669 2.33333 14C2.33333 15.8663 2.77155 17.6303 3.5507 19.1946C3.75776 19.6103 3.82668 20.0854 3.70664 20.5341L3.01176 23.1311C2.71011 24.2585 3.74151 25.2899 4.8689 24.9882L7.46595 24.2934C7.91459 24.1733 8.38974 24.2423 8.80545 24.4493C10.3698 25.2285 12.1337 25.6667 14 25.6667Z" stroke-width="1.75"/>
+              </g>
+              </svg> -->
+            </a>
+          </li>
+          <li class="footer-nav-ul-li">
+            <a href="#/balance/" class="menu-link" data-href="#/balance/" onclick="locationResolver(this.dataset.href, this)">
+              <img class="menu-icon" src="./img/chat_gray.png" alt="">
+              <span class="menu-icon-name">Баланс</span>
+              <!-- <svg class="menu-icon" stroke="black" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                <path d="M10.2623 7.74756C9.02369 6.50898 9.02369 4.50085 10.2623 3.26228C11.5008 2.0237 13.509 2.0237 14.7475 3.26228L17.7377 6.25246C18.9763 7.49104 18.9763 9.49917 17.7377 10.7377C16.4992 11.9763 14.491 11.9763 13.2525 10.7377L10.2623 7.74756Z" stroke-width="1.75"/>
+                <path d="M16.3333 4.66666C16.3333 4.66666 16.0708 6.02891 14.5497 7.54994C13.0287 9.07097 11.6667 9.33332 11.6667 9.33332" stroke-width="1.75"/>
+                <path d="M5.83333 23.7865H8.46992C9.64926 23.7865 10.8413 23.9093 11.989 24.1458C14.0193 24.5641 16.157 24.6147 18.2081 24.2827C19.2194 24.119 20.2137 23.8687 21.1137 23.4343C21.9262 23.0421 22.9214 22.4894 23.5899 21.8702C24.2574 21.252 24.9526 20.2401 25.4461 19.4492C25.8692 18.771 25.6646 17.9389 24.9953 17.4336C24.2519 16.8722 23.1487 16.8723 22.4054 17.4338L20.297 19.0265C19.4799 19.6438 18.5873 20.212 17.524 20.3816C17.3962 20.402 17.2622 20.4205 17.1224 20.4367M17.1224 20.4367C17.0803 20.4416 17.0377 20.4463 16.9946 20.4507M17.1224 20.4367C17.2925 20.4003 17.4614 20.2954 17.6199 20.1571C18.3703 19.5021 18.4177 18.3983 17.7666 17.667C17.6156 17.4973 17.4388 17.3558 17.2422 17.2386C13.9787 15.292 8.90098 16.7746 5.83333 18.9501M17.1224 20.4367C17.0798 20.4459 17.0372 20.4507 16.9946 20.4507M16.9946 20.4507C16.384 20.5134 15.6697 20.5296 14.8771 20.4547" stroke-width="1.75" stroke-linecap="round"/>
+                <rect x="2.33333" y="16.3333" width="3.5" height="9.33333" rx="1.75" stroke-width="1.75"/>
+                </g>
+                </svg> -->
+            </a>
+          </li>
+          <li class="footer-nav-ul-li">
+            <a href="#/account/" class="menu-link" data-href="#/account/" onclick="locationResolver(this.dataset.href, this)">
+              <img class="menu-icon" src="./img/hands_gray.png" alt="">
+              <span class="menu-icon-name">Кабинет</span>
+                <!-- <svg class="menu-icon" stroke="black" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5">
+                <circle cx="14" cy="7.00001" r="4.66667" stroke-width="1.75"/>
+                <ellipse cx="14" cy="19.8333" rx="8.16667" ry="4.66667" stroke-width="1.75"/>
+                </g>
+                </svg> -->
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </main>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
