@@ -8,6 +8,10 @@ class FeedbacksState(StatesGroup):
     fb_answered: State = State()
 
 
+class SetTimeDeltaState(StatesGroup):
+    time_not_set = State()
+
+
 # async def redis():
 #     async with aioredis.from_url("redis://localhost", decode_responses=True) as redis:
 #         await redis.hset(

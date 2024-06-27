@@ -1,3 +1,4 @@
+let tg = window.Telegram.WebApp
 const chatIcon = document.querySelectorAll("svg")
 const contentBlock = document.querySelector(".content")
 const navMenu = document.querySelectorAll(".menu-link")
